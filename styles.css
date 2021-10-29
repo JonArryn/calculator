@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(136, 136, 136);
+}
+
+.calc-body {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 400px;
+  justify-content: center;
+}
+
+.display-pad {
+  display: grid;
+  grid-template-rows: 1fr 1.75fr;
+  background-color: rgb(61, 61, 61);
+  border: 2px solid #91f30c;
+}
+
+.display {
+  font-family: sans-serif;
+  font-size: xx-large;
+  background-color: black;
+  border: 1px solid #91f30c;
+  margin: 7px;
+  color: white;
+  overflow-wrap: break-word;
+  width: 281px;
+  height: 121px;
+}
+
+.pad {
+  background-color: rgb(70, 70, 70);
+  margin: 5px;
+
+  /* GRID */
+
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 1.25fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.button {
+  background-color: #6e0cf3;
+  color: white;
+  font-size: larger;
+  border-radius: 15px;
+  border: 2px solid #91f30c;
+}
+
+.button:hover {
+  background-color: rgb(79, 79, 79);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: white;
+  color: black;
+}
+
+.opr {
+  background-color: #21b2de;
+}
+
+.opr:hover {
+  background-color: orangered;
+}
+
+.opr:active {
+  background-color: white;
+  color: black;
+}
+
+.button-equal {
+  grid-column: 3 / span 1;
+}
+
+.button-clr {
+  grid-column: 5 / 6;
+  grid-row: 1 / span 3;
+  background-color: orangered;
+}
+
+.eq {
+  background-color: #91f30c;
+  color: black;
+  border: 2px solid #6e0cf3;
+}
